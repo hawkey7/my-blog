@@ -14,6 +14,8 @@ tags:
 
 `const a = 1 + 2`
 
-``
-
-``
+```javascript  
+const b = a > 1 ? b(a--) + 1 : 1
+const a = 1 + 2
+const b = a > 1 ? b(a--) + 1 : 1
+```
