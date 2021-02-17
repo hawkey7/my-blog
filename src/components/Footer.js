@@ -8,6 +8,18 @@ import twitter from '../img/social/twitter.svg'
 import vimeo from '../img/social/vimeo.svg'
 
 const Footer = class extends React.Component {
+  componentDidMount() {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  }
+  
   render() {
     return (
       <footer className="footer has-background-black has-text-white-ter">
