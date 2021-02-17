@@ -38,6 +38,7 @@ const Navbar = class extends React.Component {
         className="navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
+        style={{position: 'absolute',backgroundColor: 'transparent'}}
       >
         <div className="container">
           <div className="navbar-brand">
@@ -61,25 +62,22 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
+              Home
               </Link>
               <Link className="navbar-item" to="/blog">
-                Blog
+              Archives
+              </Link>
+              <Link className="navbar-item" to="/products">
+              Projects
               </Link>
               <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
+              About
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
               <a
                 className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+                href="https://github.com/hawkey7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
