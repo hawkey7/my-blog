@@ -1,5 +1,5 @@
 backend:
-  name: hawkey7
+  name: github
   repo: hawkey7/my-blog
   branch: master
   commit_messages:
